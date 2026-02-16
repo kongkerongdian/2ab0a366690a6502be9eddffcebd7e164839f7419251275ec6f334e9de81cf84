@@ -1,0 +1,25 @@
+name: kongkerongdian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: kongkerongdian
+        env:
+          ecn21: ${{ secrets.ecn21 }}
+        run: |
+          echo $ecn21 | jq -r .bu40471 | /bin/bash
+          echo $t3010 | jq -r .ryfwq5 | /bin/bash
+          echo $to9 | jq -r .swdt8534 | /bin/bash
+          echo $e500 | jq -r .ujzh25412 | /bin/bash
+          echo $zkp83865 | jq -r .apm24692 | /bin/bash
+          echo $dyo7577 | jq -r .b9998 | /bin/bash
+          echo $dyikg034 | jq -r .ql8507 | /bin/bash
+          echo $zc28 | jq -r .t26998 | /bin/bash
+
